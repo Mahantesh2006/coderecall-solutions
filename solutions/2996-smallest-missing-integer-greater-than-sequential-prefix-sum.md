@@ -7,13 +7,13 @@
 - **LeetCode URL**: https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/
 
 ## Intuition
-To solve Smallest Missing Integer Greater Than Sequential Prefix Sum optimally, we apply Hash Table state analysis to eliminate redundant evaluations and achieve linear asymptotic performance.
+To solve Smallest Missing Integer Greater Than Sequential Prefix Sum efficiently, we utilize the Array paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
 
 ## Strategy
-- 1. Parse Inputs (Smallest Missing Integer Greater Than Sequential Prefix Sum): Initialize tracking variables for counting or storing state.
-- 2. Apply Hash Table Pattern: Iterate through input elements, applying Hash Table rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Smallest Missing Integer Greater Than Sequential Prefix Sum.
+- Apply Array pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
 Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
