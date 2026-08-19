@@ -8,20 +8,28 @@
 // Synced via : CodeRecall (https://code-recall-one.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int intersectionOfTwoArraysIi(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
+    vector<int> intersect(vector<int>& arr1, vector<int>& arr2) {
+        int m=arr1.size();
+        int n=arr2.size();
+        sort(arr1.begin(),arr1.end());
+        sort(arr2.begin(),arr2.end());
+        int i=0;
+        int j=0;
+        vector<int> result;
+        while(i<m && j<n){
+            if(arr1[i]==arr2[j]){
+                result.push_back(arr1[i]);
+                i++;
+                j++;
+            }
+            else if(arr1[i]<arr2[j]){
+                i++;
+            }else{
+                j++;
+            }
         }
-        return ans;
+        return result;
     }
 };
