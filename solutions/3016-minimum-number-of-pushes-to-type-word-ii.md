@@ -24,4 +24,4 @@ Why Optimized Approach Works: Assigning the most frequent letters to keys requir
 - **Space**: `$O(1)$ constant auxiliary space for 26 frequency buckets.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
