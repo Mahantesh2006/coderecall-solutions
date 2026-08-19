@@ -5,7 +5,7 @@
 // Time       : $O(N)$ linear time to count frequencies + $O(1)$ sorting of 26 letters.
 // Space      : $O(1)$ constant auxiliary space for 26 frequency buckets.
 // URL        : https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
