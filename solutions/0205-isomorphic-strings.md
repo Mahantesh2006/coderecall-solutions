@@ -7,13 +7,13 @@
 - **LeetCode URL**: https://leetcode.com/problems/isomorphic-strings/
 
 ## Intuition
-To solve Isomorphic Strings optimally, we apply Hash Table state analysis to eliminate redundant evaluations and achieve linear asymptotic performance.
+Count the frequency of each element or character and process them in descending order of frequency using a Hash Table or frequency array to minimize overall cost.
 
 ## Strategy
-- 1. Parse Inputs (Isomorphic Strings): Initialize tracking variables for counting or storing state.
-- 2. Apply Hash Table Pattern: Iterate through input elements, applying Hash Table rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Isomorphic Strings.
+- Apply Hash Table pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
 Counting frequencies in linear $O(N)$ time and sorting frequencies in descending order ensures the highest-frequency elements are processed with minimum cost.
