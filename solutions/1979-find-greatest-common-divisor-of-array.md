@@ -7,7 +7,7 @@
 - **LeetCode URL**: https://leetcode.com/problems/find-greatest-common-divisor-of-array/
 
 ## Intuition
-The core intuition for Find Greatest Common Divisor of Array relies on utilizing Array to achieve optimal performance.
+To solve Find Greatest Common Divisor of Array optimally, we apply Array state analysis to eliminate redundant evaluations and achieve linear asymptotic performance.
 
 ## Strategy
 - 1. Parse Inputs (Find Greatest Common Divisor of Array): Initialize tracking variables for counting or storing state.
@@ -16,7 +16,7 @@ The core intuition for Find Greatest Common Divisor of Array relies on utilizing
 - 4. Return Result: Return the computed final answer.
 
 ## Optimal Solution
-Optimal single-pass traversal applying Array invariant constraints.
+Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
 
 ## Complexity Analysis
 - **Time**: `O(N) - Linear time pass through input elements.`
