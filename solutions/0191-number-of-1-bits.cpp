@@ -5,7 +5,7 @@
 // Time       : $O(1)$ constant time (at most 32 bit iterations).
 // Space      : $O(1)$ constant auxiliary space.
 // URL        : https://leetcode.com/problems/number-of-1-bits/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
