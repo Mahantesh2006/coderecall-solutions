@@ -5,7 +5,7 @@
 // Time       : $O(K^2)$ quadratic time complexity where K is rowIndex.
 // Space      : $O(K)$ space complexity for output array.
 // URL        : https://leetcode.com/problems/pascals-triangle-ii/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
