@@ -5,7 +5,7 @@
 // Time       : $O(R \times C)$ linear time complexity over matrix dimensions.
 // Space      : $O(1)$ auxiliary space complexity.
 // URL        : https://leetcode.com/problems/island-perimeter/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
