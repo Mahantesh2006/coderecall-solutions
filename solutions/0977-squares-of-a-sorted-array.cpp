@@ -5,7 +5,7 @@
 // Time       : $O(N)$ linear time single pass.
 // Space      : $O(1)$ auxiliary space excluding output vector.
 // URL        : https://leetcode.com/problems/squares-of-a-sorted-array/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
