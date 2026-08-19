@@ -10,10 +10,10 @@
 Maintain a dynamic window [left, right] that expands right to include elements and shrinks left when window invariants (e.g. unique characters or target sum) are violated.
 
 ## Strategy
-- Initialize tracking variables and state structures tailored for Repeated Substring Pattern.
-- Apply String pattern logic to traverse and process the input elements efficiently.
-- Update boundaries, invariants, and intermediate results at each step.
-- Return the optimal computed result meeting all constraints.
+- Identify the key algorithmic invariant for Repeated Substring Pattern using the String approach.
+- Initialize tracking pointers and state variables before beginning the traversal.
+- Iterate through the input, applying String boundary checks at each step.
+- Return the computed result after finishing traversal.
 
 ## Optimal Solution
 Sliding window expanding right boundary and shrinking left boundary in a single linear $O(N)$ pass.
@@ -23,4 +23,4 @@ Sliding window expanding right boundary and shrinking left boundary in a single 
 - **Space**: `O(1) - Constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
