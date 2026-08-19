@@ -26,4 +26,4 @@ Direct 2D matrix single pass with boundary edge deduction in $O(R \times C)$ tim
 - **Space**: `$O(1)$ auxiliary space complexity.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
