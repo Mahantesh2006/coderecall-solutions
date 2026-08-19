@@ -5,7 +5,7 @@
 // Time       : $O(N)$ linear time complexity.
 // Space      : $O(N)$ linear auxiliary space for hash map.
 // URL        : https://leetcode.com/problems/two-sum/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
