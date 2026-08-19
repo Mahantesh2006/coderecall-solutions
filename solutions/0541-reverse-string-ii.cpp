@@ -8,20 +8,19 @@
 // Synced via : CodeRecall (https://code-recall-one.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int reverseStringIi(vector<int>& nums) {
-        int left = 0, right = nums.size() - 1;
-        int res = 0;
-        while (left < right) {
-            if (nums[left] < nums[right]) left++;
-            else right--;
+    string reverseStr(string s, int k) {
+        int n=s.size();
+        for(int i=0;i<n;i+=2*k){
+            int left=i;
+            int right=min(i+k-1,n-1);
+            while(left<right){
+                swap(s[left],s[right]);
+                left++;
+                right--;
+            }
         }
-        return res;
+        return s;
     }
 };
