@@ -24,4 +24,4 @@ Two Pointers converging inward from extreme ends, placing the larger square at t
 - **Space**: `$O(1)$ auxiliary space excluding output vector.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
