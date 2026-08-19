@@ -8,20 +8,23 @@
 // Synced via : CodeRecall (https://code-recall-one.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int monotonicArray(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
+    bool isMonotonic(vector<int>& arr) {
+        int n=arr.size();
+        bool inc=false;
+        bool dec=false;
+        for(int i=0;i<n-1;i++){
+            if(arr[i]<arr[i+1]){
+                inc=true;
+            }
+            if(arr[i]>arr[i+1]){
+                dec=true;
+            }
         }
-        return ans;
+        if(inc==true && dec==true){
+            return false;
+        }
+        return true;
     }
 };
