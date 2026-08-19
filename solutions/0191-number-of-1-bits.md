@@ -24,4 +24,4 @@ Why Optimized Approach Works: Right-shifting n by 1 bit in each iteration (n >>=
 - **Space**: `$O(1)$ constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
