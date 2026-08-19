@@ -7,16 +7,16 @@
 - **LeetCode URL**: https://leetcode.com/problems/rotate-array/
 
 ## Intuition
-The core intuition for Rotate Array relies on utilizing Array to achieve optimal performance.
+To solve Rotate Array efficiently, we utilize the Array paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
 
 ## Strategy
-- 1. Parse Inputs (Rotate Array): Initialize tracking variables for counting or storing state.
-- 2. Apply Array Pattern: Iterate through input elements, applying Array rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Rotate Array.
+- Apply Array pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
-Optimal single-pass traversal applying Array invariant constraints.
+Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
 
 ## Complexity Analysis
 - **Time**: `O(N) - Linear time pass through input elements.`
