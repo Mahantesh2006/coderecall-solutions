@@ -24,4 +24,4 @@ One-pass Hash Map lookup reducing search complexity to O(1) time per element.
 - **Space**: `$O(N)$ linear auxiliary space for hash map.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
