@@ -24,4 +24,4 @@ Single 1D array of size k + 1 updated right-to-left in-place, achieving $O(K^2)$
 - **Space**: `$O(K)$ space complexity for output array.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
