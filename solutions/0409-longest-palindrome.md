@@ -10,10 +10,10 @@
 Count the frequency of each element or character and process them in descending order of frequency using a Hash Table or frequency array to minimize overall cost.
 
 ## Strategy
-- Initialize tracking variables and state structures tailored for Longest Palindrome.
-- Apply Hash Table pattern logic to traverse and process the input elements efficiently.
-- Update boundaries, invariants, and intermediate results at each step.
-- Return the optimal computed result meeting all constraints.
+- Identify the key algorithmic invariant for Longest Palindrome using the Hash Table approach.
+- Initialize tracking pointers and state variables before beginning the traversal.
+- Iterate through the input, applying Hash Table boundary checks at each step.
+- Return the computed result after finishing traversal.
 
 ## Optimal Solution
 Counting frequencies in linear $O(N)$ time and sorting frequencies in descending order ensures the highest-frequency elements are processed with minimum cost.
@@ -23,4 +23,4 @@ Counting frequencies in linear $O(N)$ time and sorting frequencies in descending
 - **Space**: `O(1) - Constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
