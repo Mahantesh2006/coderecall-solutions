@@ -7,16 +7,16 @@
 - **LeetCode URL**: https://leetcode.com/problems/reverse-integer/
 
 ## Intuition
-The core intuition for Reverse Integer relies on utilizing Math to achieve optimal performance.
+To solve Reverse Integer efficiently, we utilize the Math paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
 
 ## Strategy
-- 1. Parse Inputs (Reverse Integer): Initialize tracking variables for counting or storing state.
-- 2. Apply Math Pattern: Iterate through input elements, applying Math rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Reverse Integer.
+- Apply Math pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
-Optimal single-pass traversal applying Math invariant constraints.
+Single-pass iterative traversal maintaining state invariants using Math, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
 
 ## Complexity Analysis
 - **Time**: `O(N) - Linear time pass through input elements.`
