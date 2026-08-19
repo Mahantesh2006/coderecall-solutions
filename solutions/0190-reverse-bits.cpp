@@ -2,8 +2,8 @@
 // LeetCode #190: Reverse Bits
 // Difficulty : EASY
 // Pattern    : Divide and Conquer
-// Time       : $O(1) - The loop executes a constant number of iterations (exactly 32 times), which is independent of the input value magnitude, resulting in constant time complexity.
-// Space      : $O(1) - Only a few primitive 32-bit unsigned integer variables (`ans`, `i`) are allocated on the stack, requiring constant auxiliary memory.
+// Time       : O(N) - Linear time pass through input elements.
+// Space      : O(1) - Constant auxiliary space.
 // URL        : https://leetcode.com/problems/reverse-bits/
 // Synced via : CodeRecall (https://code-recall-one.vercel.app)
 // ////////////////////////////////////////////////////////////
