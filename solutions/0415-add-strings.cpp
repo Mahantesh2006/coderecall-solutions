@@ -5,7 +5,7 @@
 // Time       : $O(\max(N, M))$ linear time where N and M are lengths of num1 and num2.
 // Space      : $O(\max(N, M))$ auxiliary space to build output string.
 // URL        : https://leetcode.com/problems/add-strings/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
 class Solution {
