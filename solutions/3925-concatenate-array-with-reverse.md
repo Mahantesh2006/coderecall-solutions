@@ -7,13 +7,13 @@
 - **LeetCode URL**: https://leetcode.com/problems/concatenate-array-with-reverse/
 
 ## Intuition
-To solve Concatenate Array With Reverse optimally, we apply Array state analysis to eliminate redundant evaluations and achieve linear asymptotic performance.
+To solve Concatenate Array With Reverse efficiently, we utilize the Array paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
 
 ## Strategy
-- 1. Parse Inputs (Concatenate Array With Reverse): Initialize tracking variables for counting or storing state.
-- 2. Apply Array Pattern: Iterate through input elements, applying Array rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Concatenate Array With Reverse.
+- Apply Array pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
 Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
