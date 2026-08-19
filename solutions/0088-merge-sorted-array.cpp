@@ -2,8 +2,8 @@
 // LeetCode #88: Merge Sorted Array
 // Difficulty : EASY
 // Pattern    : Array
-// Time       : $O(m + n)$ - Each element from `nums1` (up to $m$ elements) and `nums2` ($n$ elements) is visited at most once during the backwards two-pointer traversal.
-// Space      : $O(1)$ - The algorithm operates completely in-place using only three integer scalar variables (`i`, `j`, `k`), requiring no auxiliary data structures or dynamic memory allocation.
+// Time       : O(N) - Linear time pass through input elements.
+// Space      : O(1) - Constant auxiliary space.
 // URL        : https://leetcode.com/problems/merge-sorted-array/
 // Synced via : CodeRecall (https://code-recall-one.vercel.app)
 // ////////////////////////////////////////////////////////////
