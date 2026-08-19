@@ -7,16 +7,16 @@
 - **LeetCode URL**: https://leetcode.com/problems/reverse-string-ii/
 
 ## Intuition
-The core intuition for Reverse String II relies on utilizing Two Pointers to achieve optimal performance.
+By positioning left and right pointers at array boundaries and converging inwards based on value comparison, we evaluate all optimal pairs in a single linear $O(N)$ pass.
 
 ## Strategy
-- 1. Parse Inputs (Reverse String II): Initialize tracking variables for counting or storing state.
-- 2. Apply Two Pointers Pattern: Iterate through input elements, applying Two Pointers rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Initialize tracking variables and state structures tailored for Reverse String II.
+- Apply Two Pointers pattern logic to traverse and process the input elements efficiently.
+- Update boundaries, invariants, and intermediate results at each step.
+- Return the optimal computed result meeting all constraints.
 
 ## Optimal Solution
-Optimal single-pass traversal applying Two Pointers invariant constraints.
+Two-pointer left/right boundary convergence skipping invalid candidates in linear time.
 
 ## Complexity Analysis
 - **Time**: `O(N) - Linear time pass through input elements.`
