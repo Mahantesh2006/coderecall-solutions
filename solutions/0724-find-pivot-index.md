@@ -7,20 +7,20 @@
 - **LeetCode URL**: https://leetcode.com/problems/find-pivot-index/
 
 ## Intuition
-The core intuition for Find Pivot Index relies on utilizing Array to achieve optimal performance.
+To solve Find Pivot Index efficiently, we utilize the Array paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
 
 ## Strategy
-- 1. Parse Inputs (Find Pivot Index): Initialize tracking variables for counting or storing state.
-- 2. Apply Array Pattern: Iterate through input elements, applying Array rules to compute values.
-- 3. Update Invariants: Adjust pointer boundaries or update state at each iteration.
-- 4. Return Result: Return the computed final answer.
+- Identify the key algorithmic invariant for Find Pivot Index using the Array approach.
+- Initialize tracking pointers and state variables before beginning the traversal.
+- Iterate through the input, applying Array boundary checks at each step.
+- Return the computed result after finishing traversal.
 
 ## Optimal Solution
-Optimal single-pass traversal applying Array invariant constraints.
+Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
 
 ## Complexity Analysis
 - **Time**: `O(N) - Linear time pass through input elements.`
 - **Space**: `O(1) - Constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*

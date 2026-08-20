@@ -8,16 +8,18 @@
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& arr, int target) {
-        int n=arr.size();
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]+arr[j]==target){
-                    return {i,j};
-                }
-            }
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> mp;
+        for (int i = 0; i < nums.size(); i++) {
+            int diff = target - nums[i];
+            if (mp.count(diff)) return {mp[diff], i};
+            mp[nums[i]] = i;
         }
         return {};
     }

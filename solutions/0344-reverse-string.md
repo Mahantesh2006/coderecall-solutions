@@ -10,10 +10,10 @@
 By positioning left and right pointers at array boundaries and converging inwards based on value comparison, we evaluate all optimal pairs in a single linear $O(N)$ pass.
 
 ## Strategy
-- Initialize tracking variables and state structures tailored for Reverse String.
-- Apply Two Pointers pattern logic to traverse and process the input elements efficiently.
-- Update boundaries, invariants, and intermediate results at each step.
-- Return the optimal computed result meeting all constraints.
+- Identify the key algorithmic invariant for Reverse String using the Two Pointers approach.
+- Initialize tracking pointers and state variables before beginning the traversal.
+- Iterate through the input, applying Two Pointers boundary checks at each step.
+- Return the computed result after finishing traversal.
 
 ## Optimal Solution
 Two-pointer left/right boundary convergence skipping invalid candidates in linear time.
@@ -23,4 +23,4 @@ Two-pointer left/right boundary convergence skipping invalid candidates in linea
 - **Space**: `O(1) - Constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*

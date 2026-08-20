@@ -5,28 +5,23 @@
 // Time       : O(N) - Linear time pass through input elements.
 // Space      : O(1) - Constant auxiliary space.
 // URL        : https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
+
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
 
 class Solution {
 public:
-    int strStr(string haystack, string needle) {
-        int n = haystack.size();
-        int m = needle.size();
-
-        if (m == 0) return 0;
-
-        for (int i = 0; i <= n - m; i++) {
-            int j = 0;
-
-            while (j < m && haystack[i + j] == needle[j]) {
-                j++;
-            }
-
-            if (j == m)
-                return i;
+    int findTheIndexOfTheFirstOccurrenceInAString(vector<int>& nums) {
+        int left = 0, right = nums.size() - 1;
+        int res = 0;
+        while (left < right) {
+            if (nums[left] < nums[right]) left++;
+            else right--;
         }
-
-        return -1;
+        return res;
     }
 };

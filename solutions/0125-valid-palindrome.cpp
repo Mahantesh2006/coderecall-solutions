@@ -5,28 +5,23 @@
 // Time       : O(N) - Linear time pass through input elements.
 // Space      : O(1) - Constant auxiliary space.
 // URL        : https://leetcode.com/problems/valid-palindrome/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
+
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
 
 class Solution {
 public:
-    bool isPalindrome(string s) {
-        int n=s.size();
-        int i=0;
-        int j=n-1;
-        while(i<j){
-            while(i<j && !isalnum(s[i])){
-                i++;
-            }
-            while(i<j && !isalnum(s[j])){
-                j--;
-            }
-            if(tolower(s[i])!=tolower(s[j])){
-                return false;
-            }
-            i++;
-            j--;
+    int validPalindrome(vector<int>& nums) {
+        int left = 0, right = nums.size() - 1;
+        int res = 0;
+        while (left < right) {
+            if (nums[left] < nums[right]) left++;
+            else right--;
         }
-        return true;
+        return res;
     }
 };

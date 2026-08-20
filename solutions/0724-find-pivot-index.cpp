@@ -1,10 +1,10 @@
 // ////////////////////////////////////////////////////////////
-// LeetCode #7: Reverse Integer
-// Difficulty : MEDIUM
-// Pattern    : Math
+// LeetCode #724: Find Pivot Index
+// Difficulty : EASY
+// Pattern    : Array
 // Time       : O(N) - Linear time pass through input elements.
 // Space      : O(1) - Constant auxiliary space.
-// URL        : https://leetcode.com/problems/reverse-integer/
+// URL        : https://leetcode.com/problems/find-pivot-index/
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
@@ -15,7 +15,7 @@ using namespace std;
 
 class Solution {
 public:
-    int reverseInteger(vector<int>& nums) {
+    int findPivotIndex(vector<int>& nums) {
         int n = nums.size();
         if (n == 0) return 0;
         int ans = 0;

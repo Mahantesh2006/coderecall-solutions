@@ -5,18 +5,23 @@
 // Time       : O(N) - Linear time pass through input elements.
 // Space      : O(1) - Constant auxiliary space.
 // URL        : https://leetcode.com/problems/reverse-string/
-// Synced via : CodeRecall (https://code-recall-one.vercel.app)
+// Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
+
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
 
 class Solution {
 public:
-    void reverseString(vector<char>& s) {
-        int i=0;
-        int j=s.size()-1;
-        while(i<j){
-            swap(s[i],s[j]);
-            i++;
-            j--;
+    int reverseString(vector<int>& nums) {
+        int left = 0, right = nums.size() - 1;
+        int res = 0;
+        while (left < right) {
+            if (nums[left] < nums[right]) left++;
+            else right--;
         }
+        return res;
     }
 };

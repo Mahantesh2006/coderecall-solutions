@@ -23,4 +23,4 @@ Reverse second half of integer dynamically until revertedNumber >= x.
 - **Space**: `$O(1)$ constant auxiliary space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*

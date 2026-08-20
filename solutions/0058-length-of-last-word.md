@@ -23,4 +23,4 @@ Backward single-pass traversal skipping trailing whitespace then counting word l
 - **Space**: `$O(1)$ constant auxiliary memory space.`
 
 ---
-*Synced automatically via [CodeRecall](https://code-recall-one.vercel.app)*
+*Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
