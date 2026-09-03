@@ -8,20 +8,23 @@
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int findPivotIndex(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
+    int pivotIndex(vector<int>& arr) {
+        int n=arr.size();
+        int sum=0;
+        for(int &x:arr){
+            sum+=x;
         }
-        return ans;
+        int cs=0;
+        for(int i=0;i<n;i++){
+            int ls=cs;
+            int rs=sum-cs-arr[i];
+            if(ls==rs){
+                return i;
+            }
+            cs+=arr[i];
+        }
+        return -1;
     }
 };
