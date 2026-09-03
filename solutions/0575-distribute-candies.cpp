@@ -8,20 +8,10 @@
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int distributeCandies(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
-        }
-        return ans;
+    int distributeCandies(vector<int>& candyType) {
+        unordered_set<int> types(candyType.begin(), candyType.end());
+        return min((int)types.size(), (int)candyType.size() / 2);
     }
 };
