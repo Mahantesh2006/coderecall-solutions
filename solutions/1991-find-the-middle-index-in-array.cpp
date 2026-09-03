@@ -8,20 +8,22 @@
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int findTheMiddleIndexInArray(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
+    int findMiddleIndex(vector<int>& arr) {
+        int n=arr.size();
+        int totsum=0;
+        for(int num:arr){
+            totsum+=num;
         }
-        return ans;
+        int lefts=0;
+        for(int i=0;i<n;i++){
+            int rights=totsum-lefts-arr[i];
+            if(lefts==rights){
+                return i;
+            }
+            lefts+=arr[i];
+        }
+        return -1;
     }
 };
