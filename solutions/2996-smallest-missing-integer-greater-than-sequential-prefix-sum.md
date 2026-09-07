@@ -2,25 +2,25 @@
 
 - **Difficulty**: EASY
 - **Pattern**: Array
-- **Time Complexity**: O(N) - Linear time pass through input elements.
-- **Space Complexity**: O(1) - Constant auxiliary space.
+- **Time Complexity**: $O(N)$ linear time to compute prefix sum and insert elements into hash set.
+- **Space Complexity**: $O(N)$ auxiliary space for hash set.
 - **LeetCode URL**: https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/
 
 ## Intuition
-To solve Smallest Missing Integer Greater Than Sequential Prefix Sum efficiently, we utilize the Array paradigm to eliminate redundant recalculations across state traversals and achieve optimal asymptotic performance.
+Find the maximum sequential prefix starting at nums[0] where nums[i] == nums[i-1] + 1. Sum elements in this prefix. Insert all array numbers into a hash set. Starting from the prefix sum, increment while the value is present in the set.
 
 ## Strategy
-- Identify the key algorithmic invariant for Smallest Missing Integer Greater Than Sequential Prefix Sum using the Array approach.
-- Initialize tracking pointers and state variables before beginning the traversal.
-- Iterate through the input, applying Array boundary checks at each step.
-- Return the computed result after finishing traversal.
+- 1. Initialize sum = nums[0] and iterate while i < nums.size() && nums[i] == nums[i-1] + 1, adding nums[i] to sum.
+- 2. Store all elements of nums into an unordered_set.
+- 3. While st.count(sum) is true, increment sum.
+- 4. Return sum.
 
 ## Optimal Solution
-Single-pass iterative traversal maintaining state invariants using Array, reducing time complexity to $O(N)$ and space complexity to $O(1)$.
+One pass to find the sequential prefix sum O(N). Hash set for O(1) membership checks. Increment sum until not found.
 
 ## Complexity Analysis
-- **Time**: `O(N) - Linear time pass through input elements.`
-- **Space**: `O(1) - Constant auxiliary space.`
+- **Time**: `$O(N)$ linear time to compute prefix sum and insert elements into hash set.`
+- **Space**: `$O(N)$ auxiliary space for hash set.`
 
 ---
 *Synced automatically via [CodeRecall](https://coderecall.vercel.app)*
