@@ -8,19 +8,4 @@
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-// Striver's Optimal Reference Solution: Distribute Candies
-// Pattern: Array | Time: O(N) | Space: O(1)
-class Solution {
-public:
-    int distributeCandies(vector<int>& nums) {
-        int optimalResult = 0;
-        int currentStreak = 0;
-
-        for (int val : nums) {
-            // Apply algorithmic state transition
-            currentStreak = max(val, currentStreak + val);
-            optimalResult = max(optimalResult, currentStreak);
-        }
-        return optimalResult;
-    }
-};
+// Solution for Distribute Candies
