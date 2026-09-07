@@ -2,26 +2,29 @@
 // LeetCode #2996: Smallest Missing Integer Greater Than Sequential Prefix Sum
 // Difficulty : EASY
 // Pattern    : Array
-// Time       : O(N) - Linear time pass through input elements.
-// Space      : O(1) - Constant auxiliary space.
+// Time       : $O(N)$ linear time to compute prefix sum and insert elements into hash set.
+// Space      : $O(N)$ auxiliary space for hash set.
 // URL        : https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/
 // Synced via : CodeRecall (https://coderecall.vercel.app)
 // ////////////////////////////////////////////////////////////
 
-#include <vector>
-#include <string>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
-    int smallestMissingIntegerGreaterThanSequentialPrefixSum(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
-        int ans = 0;
-        for (int i = 0; i < n; i++) {
-            ans += nums[i];
+    int missingInteger(vector<int>& nums) {
+        int sum = nums[0];
+        int i = 1;
+
+        while (i < nums.size() && nums[i] == nums[i - 1] + 1) {
+            sum += nums[i];
+            i++;
         }
-        return ans;
+
+        unordered_set<int> st(nums.begin(), nums.end());
+
+        while (st.count(sum)) {
+            sum++;
+        }
+
+        return sum;
     }
 };
